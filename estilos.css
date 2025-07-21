@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  background: linear-gradient(to bottom right, #ffe4e1, #fff0f5);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container-collage {
+  padding: 20px;
+}
+
+.grid-collage {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: 200px auto 200px; /* la fila del medio se adapta al texto */
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cuadro-amor {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.razon-texto {
+  font-size: 1rem;
+  color: #444;
+  margin: 10px 0;
+  line-height: 1.4;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.btn-pink {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.btn-pink:hover {
+  background-color: #c2185b;
+}
